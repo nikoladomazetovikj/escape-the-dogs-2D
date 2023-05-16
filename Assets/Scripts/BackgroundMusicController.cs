@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class BackgroundMusicController : MonoBehaviour
 {
+    private static BackgroundMusicController instance;
 
-    void Awake()
+    private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
