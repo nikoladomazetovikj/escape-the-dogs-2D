@@ -1,3 +1,10 @@
 /Library
 /Logs
 /UserSettings
+/obj
+.vs
+.vsconfig
+.idea
+Assembly-CSharp.csproj
+Escape The Dogs.sln
+/Temp
