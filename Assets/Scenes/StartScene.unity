@@ -854,6 +854,7 @@ GameObject:
   - component: {fileID: 1869279460}
   - component: {fileID: 1869279459}
   - component: {fileID: 1869279458}
+  - component: {fileID: 1869279461}
   m_Layer: 5
   m_Name: InstructionsButton
   m_TagString: Untagged
@@ -925,7 +926,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1869279459}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1869279461}
+        m_TargetAssemblyTypeName: ChangeSceneController, Assembly-CSharp
+        m_MethodName: SwitchScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: InstructionsScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1869279459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,6 +977,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869279456}
   m_CullTransparentMesh: 1
+--- !u!114 &1869279461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869279456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84be533b7718f4142a373126f4da64e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2012914214
 GameObject:
   m_ObjectHideFlags: 0
