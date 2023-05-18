@@ -31,4 +31,14 @@ public class DogController : MonoBehaviour
         Vector3 screenPoint = mainCamera.WorldToViewportPoint(transform.position);
         isOffScreen = (screenPoint.x < 0 || screenPoint.x > 1 || screenPoint.y < 0 || screenPoint.y > 1);
     }
+    
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if the dog collided with the Man object
+        if (collision.CompareTag("Man"))
+        {
+            // Destroy the Man object
+            Destroy(collision.gameObject);
+        }
+    }
 }
