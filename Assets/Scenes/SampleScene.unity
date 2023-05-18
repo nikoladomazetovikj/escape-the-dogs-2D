@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605095407}
   - component: {fileID: 605095406}
+  - component: {fileID: 605095408}
   m_Layer: 0
   m_Name: BlackDog
   m_TagString: Untagged
@@ -284,13 +285,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605095405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.71, y: -2.77, z: 0}
+  m_LocalPosition: {x: -0.71, y: -3.5, z: 0}
   m_LocalScale: {x: 1.1587, y: 1.3813, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &605095408
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605095405}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b918832f0f196684d8fc3749fbe2c657, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &690119759
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,8 +390,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690119759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2799, y: 1.7906, z: 0}
-  m_LocalScale: {x: 0.9829618, y: 0.27261642, z: 1}
+  m_LocalPosition: {x: 2.28, y: 2.08, z: 0}
+  m_LocalScale: {x: 0.9912186, y: 0.30004162, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2087846734}
@@ -528,6 +550,7 @@ GameObject:
   - component: {fileID: 1149404141}
   - component: {fileID: 1149404140}
   - component: {fileID: 1149404142}
+  - component: {fileID: 1149404143}
   m_Layer: 0
   m_Name: Man
   m_TagString: Untagged
@@ -623,6 +646,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1149404143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149404139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e88223931d9cdd449452aee14dc09de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1704230415
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087846732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4527, y: -6.815, z: 0}
+  m_LocalPosition: {x: -1.4527, y: -8.6, z: 0}
   m_LocalScale: {x: 0.8188612, y: 2.0466738, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
