@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: white_dog_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 920
+        width: 309
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e512e40b2cae3734fa567f133c4b19a9
+      internalID: 1774282652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 919
+        width: 320
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bf7401d39ae8a478dc721068634615
+      internalID: 1462476929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_2
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 920
+        width: 321
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7746207b5533b645803426d9de5c854
+      internalID: 1960946928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_3
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 920
+        width: 327
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eee2b3a6e6a57a4a9d6a88c014935e7
+      internalID: -1280154793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 704
+        width: 309
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba2238433e98ea48ba8aa5d5748c01b
+      internalID: -799367467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_5
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 718
+        width: 319
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303ec114fbc404b49afa8f45a6f045c6
+      internalID: 292129975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_6
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 726
+        width: 308
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6105ab45fca6e714fa10713adc81e2fc
+      internalID: -2001586745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_7
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 720
+        width: 313
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11fb88f6fd8d364788b464c7acb04b2
+      internalID: -1505032883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 467
+        width: 310
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7dfaa6428365a4e9e4a7b0b47b5a89
+      internalID: -1899351992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_9
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 449
+        width: 310
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dc298f879cc9f4b97117e0de1ecff4
+      internalID: -1451298499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_10
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 445
+        width: 310
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35e5fdc816b6fa4ba6ba4cb2944e516
+      internalID: 1840400194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_11
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 440
+        width: 313
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c3a49860fa6194a909e8cb03c05174
+      internalID: -1298742230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_dog_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 192
+        width: 306
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b55406b84a3d242b4795df2558fed3
+      internalID: 431654627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +399,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      white_dog_0: 1774282652
+      white_dog_1: 1462476929
+      white_dog_10: 1840400194
+      white_dog_11: -1298742230
+      white_dog_12: 431654627
+      white_dog_2: 1960946928
+      white_dog_3: -1280154793
+      white_dog_4: -799367467
+      white_dog_5: 292129975
+      white_dog_6: -2001586745
+      white_dog_7: -1505032883
+      white_dog_8: -1899351992
+      white_dog_9: -1451298499
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
