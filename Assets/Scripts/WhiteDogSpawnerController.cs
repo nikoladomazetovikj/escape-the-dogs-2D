@@ -5,7 +5,7 @@ using UnityEngine;
 public class WhiteDogSpawnerController : MonoBehaviour
 {
     public GameObject whiteDogPrefab;
-    public float spawnInterval = 8f;
+    public float spawnInterval = 7.5f;
     public bool rotatePrefab = true; // Flag to enable rotation
 
     private void Start()
