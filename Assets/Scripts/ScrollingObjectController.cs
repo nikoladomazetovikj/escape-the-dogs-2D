@@ -5,14 +5,16 @@ using UnityEngine;
 public class ScrollingObjectController : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    private bool isManMoving;
+    private float backgroundWidth;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.velocity = Vector2.zero;
-        isManMoving = false;
+        rb2d.velocity = new Vector2(GameController.instance.scrollSpeed, 0);
+
+        // Get the width of the background sprite or collider
+        backgroundWidth = GetBackgroundWidth();
     }
 
     // Update is called once per frame
@@ -22,35 +24,43 @@ public class ScrollingObjectController : MonoBehaviour
         {
             rb2d.velocity = Vector2.zero;
         }
-        else
+
+        // Check if the background has moved offscreen
+        if (transform.position.x < -backgroundWidth)
         {
-            // Check if the player object is moving
-            bool isMoving = GetPlayerMoving();
-            SetManMoving(isMoving);
+            // Reset the background position to repeat the scene
+            RepositionBackground();
         }
     }
 
-    void SetManMoving(bool isMoving)
+    float GetBackgroundWidth()
     {
-        isManMoving = isMoving;
-        if (isManMoving)
+        // Get the width of the background sprite renderer or collider
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
         {
-            rb2d.velocity = new Vector2(GameController.instance.scrollSpeed, 0);
+            return spriteRenderer.bounds.size.x;
         }
-        else
+
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
         {
-            rb2d.velocity = Vector2.zero;
+            return collider.bounds.size.x;
         }
+
+        return 0f;
     }
 
-    bool GetPlayerMoving()
+    void RepositionBackground()
     {
-        GameObject playerObject = GameObject.FindWithTag("Man");
-        if (playerObject != null)
-        {
-            Rigidbody2D playerRigidbody = playerObject.GetComponent<Rigidbody2D>();
-            return playerRigidbody.velocity.magnitude > 0f;
-        }
-        return false;
+        // Calculate the new position for the background
+        float backgroundWidth = GetBackgroundWidth();
+        Vector2 currentPosition = transform.position;
+        Vector2 newPosition = new Vector2(currentPosition.x + backgroundWidth, currentPosition.y);
+
+        // Move the background to the new position
+        transform.position = newPosition;
     }
+
+    
 }
