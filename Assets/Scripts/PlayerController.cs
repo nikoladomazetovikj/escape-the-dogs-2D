@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody2D rb;
-    public float runSpeed = 5f;
-    public float jumpForce = 5f;
+    public float runSpeed = 2f;
+    public float jumpForce = 2f;
     
     // Start is called before the first frame update
     void Start()
