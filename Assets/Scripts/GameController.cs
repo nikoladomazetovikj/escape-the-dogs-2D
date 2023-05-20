@@ -2,48 +2,60 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    // TODO: game scoring and game over texts
-    public static GameController Instance { get; private set; }
-    public GameObject gameOverText;
-    public GameObject manObject;
-    public Camera mainCamera;
-    // Start is called before the first frame update
+    public static GameController instance;
     
-    private void Awake()
+    public GameObject gameOverText;
+
+    public bool gameOver = false;
+
+    public float scrollSpeed = -1.5f;
+
+    private int score = 0;
+
+    public Text scoreText;
+    
+    // Start is called before the first frame update
+    void Awake()
     {
-        if (Instance == null)
+        if (instance == null)
         {
-            Instance = this;
+            instance = this;
         }
-        else
+        else if (instance != this)
         {
             Destroy(gameObject);
         }
-    }
-    
-    void Start()
-    {
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    
-    public void GameOver()
-    {
-        gameOverText.SetActive(true);
-        manObject.SetActive(false);
-        Time.timeScale = 0f;
+        if (gameOver && Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
-    public void RestartGame()
+
+    public void ManScored()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (gameOver)
+        {
+            return;
+        }
+
+        score++;
+        scoreText.text = "Score: " + score.ToString();
+    }
+
+    public void ManDied()
+    {
+        gameOverText.SetActive(true);
+        gameOver = true;
     }
 }
