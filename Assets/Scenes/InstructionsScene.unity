@@ -1200,15 +1200,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "You should avoid attacking and agressive dogs. \nYou can collect coins
-    on your run.\nTo controll player press right arrow in order to run or up arrow
-    to jump.\nGood Luck!"
+    on your run.\nTo controll player press right/left arrow in order to run or up
+    arrow to jump.\nScore 100 or more point to win\nGood Luck!"
 --- !u!222 &1678957955
 CanvasRenderer:
   m_ObjectHideFlags: 0
