@@ -9,6 +9,7 @@ TagManager:
   - WhiteDog
   - BlackDog
   - Coin
+  - Ground
   layers:
   - Default
   - TransparentFX
