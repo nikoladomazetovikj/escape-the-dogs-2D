@@ -18,6 +18,9 @@ public class WhiteDogSpawnerController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(spawnInterval);
+            
+            if (GameController.instance.gameOver)
+                yield break;
 
             // Instantiate the white dog prefab
             GameObject whiteDog = Instantiate(whiteDogPrefab, transform.position, Quaternion.identity);

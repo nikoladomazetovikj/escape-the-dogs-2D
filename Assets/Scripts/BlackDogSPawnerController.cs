@@ -17,6 +17,8 @@ public class BlackDogSPawnerController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(spawnInterval);
+            if (GameController.instance.gameOver)
+                yield break;
             Instantiate(blackDogPrefab, transform.position, Quaternion.identity);
         }
     }
