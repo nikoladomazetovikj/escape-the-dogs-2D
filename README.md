@@ -4,7 +4,7 @@
 
 ## Introduction
 
-`Escpape The Dogs` is a 2D game. The goal is to escape the aggressive and angr dogs. Player wins when he/she successfully score more than 100 points.
+`Escpape The Dogs` is a 2D game. The goal is to escape the aggressive and angry dogs. Player wins when he/she successfully score more than 100 points.
 During the game, player can collect coins. 
 Game ends when a dog beats you. 
 
