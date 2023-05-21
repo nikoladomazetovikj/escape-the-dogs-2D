@@ -42,16 +42,17 @@ public class GameController : MonoBehaviour
     }
 
 
-    public void ManScored()
-    {
-        if (gameOver)
-        {
-            return;
-        }
+    public void ManScored(int scoreValue)
+	{
+    	if (gameOver)
+    	{
+       		 return;
+    	}
 
-        score++;
-        scoreText.text = "Score: " + score.ToString();
-    }
+    	score += scoreValue;
+    	scoreText.text = "SCORE: " + score.ToString();
+	}
+
 
     public void ManDied()
     {

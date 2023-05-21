@@ -7,10 +7,21 @@ public class DogController : MonoBehaviour
     public float moveSpeed = 5f;
     private Camera mainCamera;
     private bool isOffScreen;
+    private int scoreValue;
 
     private void Start()
     {
         mainCamera = Camera.main;
+        
+        // Set the score value based on the type of dog
+        if (gameObject.CompareTag("WhiteDog"))
+        {
+            scoreValue = 5;
+        }
+        else if (gameObject.CompareTag("BlackDog"))
+        {
+            scoreValue = 3;
+        }
     }
 
     private void Update()
@@ -23,6 +34,7 @@ public class DogController : MonoBehaviour
         if (isOffScreen)
         {
             Destroy(gameObject);
+            GameController.instance.ManScored(scoreValue); // Update the score
         }
     }
 

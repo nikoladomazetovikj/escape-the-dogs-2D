@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Man
   - Dog
+  - WhiteDog
+  - BlackDog
   layers:
   - Default
   - TransparentFX

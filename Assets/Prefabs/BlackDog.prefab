@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4762541420302856264}
   m_Layer: 0
   m_Name: BlackDog
-  m_TagString: Untagged
+  m_TagString: BlackDog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  isWhiteDog: 0
 --- !u!61 &4762541420302856271
 BoxCollider2D:
   m_ObjectHideFlags: 0
