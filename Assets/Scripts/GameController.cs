@@ -101,5 +101,22 @@ public class GameController : MonoBehaviour
         coinsText.enabled = false;
         gameOverText.SetActive(false);
         gameOver = true;
+        
+        DestroyObjectsWithTag("Man");
+        DestroyObjectsWithTag("Coin");
+        DestroyObjectsWithTag("WhiteDog");
+        DestroyObjectsWithTag("BlackDog");
     }
+    
+    
+    private void DestroyObjectsWithTag(string tag)
+    {
+        GameObject[] objects = GameObject.FindGameObjectsWithTag(tag);
+
+        foreach (GameObject obj in objects)
+        {
+            Destroy(obj);
+        }
+    }
+    
 }
