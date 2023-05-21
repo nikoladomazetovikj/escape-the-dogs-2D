@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         bool jumpInput = Input.GetKeyDown(KeyCode.UpArrow);
 
         // Run
-        if (horizontalInput > 0)
+        if (horizontalInput != 0)
         {
             animator.SetBool("Run", true);
             // Move the object horizontally
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(new Vector2(0f, Mathf.Min(jumpForce, maxJumpForce)), ForceMode2D.Impulse);
         }
     }
-    
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Coin"))
@@ -54,5 +54,6 @@ public class PlayerController : MonoBehaviour
             GameController.instance.CollectCoin();
             Destroy(collision.gameObject);
         }
+
     }
 }
