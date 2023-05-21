@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlackDogSPawnerController : MonoBehaviour
 {
     public GameObject blackDogPrefab;
-    public float spawnInterval = 3f;
+    public float spawnInterval = 7f;
 
     private void Start()
     {

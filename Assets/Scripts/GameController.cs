@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         
-        if (score >= 200 && !gameOver)
+        if (score >= 100 && !gameOver)
         {
             GameWin();
         }
