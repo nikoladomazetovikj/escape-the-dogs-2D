@@ -90,6 +90,8 @@ public class GameController : MonoBehaviour
         coinsText.enabled = false;
         
         gameOver = true;
+        
+        DestroyObjectsWithTag("Coin");
     }
     
     private void GameWin()
