@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
 
     public bool gameOver = false;
 
-    public float scrollSpeed = -1.5f;
+    public float scrollSpeed = -1f;
 
     private int score = 0;
 

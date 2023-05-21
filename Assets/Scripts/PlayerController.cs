@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody2D rb;
-    public float runSpeed = 2f;
+    public float runSpeed = 0.5f;
     public float jumpForce = 2f;
     public float maxJumpForce = 2.8f; // Maximum jump force limit
 
