@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour
 
     public GameObject exitButton;
     
+    public GameObject youWinText;
+    
     // Start is called before the first frame update
     void Awake()
     {
@@ -46,6 +48,11 @@ public class GameController : MonoBehaviour
         if (gameOver && Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        
+        if (score >= 200 && !gameOver)
+        {
+            GameWin();
         }
     }
 
@@ -82,6 +89,17 @@ public class GameController : MonoBehaviour
         scoreText.enabled = false;
         coinsText.enabled = false;
         
+        gameOver = true;
+    }
+    
+    private void GameWin()
+    {
+        youWinText.SetActive(true);
+        restartButton.SetActive(true);
+        exitButton.SetActive(true);
+        scoreText.enabled = false;
+        coinsText.enabled = false;
+        gameOverText.SetActive(false);
         gameOver = true;
     }
 }
