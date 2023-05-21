@@ -1246,6 +1246,7 @@ MonoBehaviour:
   coinPrefab: {fileID: 5107365423610923378, guid: 456a03ea4541b4342b1e1e9454781a0f, type: 3}
   spawnInterval: 3
   spawnRange: 5
+  spawnYOffset: 0.5
 --- !u!4 &710763983
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,7 +1255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710763981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.14, y: -2.23, z: 1.2229819}
+  m_LocalPosition: {x: 0.7, y: -4.3, z: 1.2229819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
