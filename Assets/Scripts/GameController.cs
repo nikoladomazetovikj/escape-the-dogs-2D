@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
     public float scrollSpeed = -1f;
 
     private int score = 0;
+    
+    private int coinsCount = 0;
 
     public Text scoreText;
 
@@ -58,6 +60,18 @@ public class GameController : MonoBehaviour
     	score += scoreValue;
         scoreText.text = "SCORE: " + score.ToString();
 	}
+    
+    
+    public void CollectCoin()
+    {
+        if (gameOver)
+        {
+            return;
+        }
+
+        coinsCount++;
+        coinsText.text = "COINS: " + coinsCount.ToString();
+    }
 
 
     public void ManDied()

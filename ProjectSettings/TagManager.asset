@@ -8,6 +8,7 @@ TagManager:
   - Dog
   - WhiteDog
   - BlackDog
+  - Coin
   layers:
   - Default
   - TransparentFX
