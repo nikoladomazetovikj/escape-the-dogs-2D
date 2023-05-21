@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     public float runSpeed = 2f;
     public float jumpForce = 2f;
-    
+    public float maxJumpForce = 2.8f; // Maximum jump force limit
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +42,8 @@ public class PlayerController : MonoBehaviour
         if (jumpInput)
         {
             animator.SetTrigger("Jump");
-            // Add upward force for jumping
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            // Apply upward force for jumping, limited to maxJumpForce
+            rb.AddForce(new Vector2(0f, Mathf.Min(jumpForce, maxJumpForce)), ForceMode2D.Impulse);
         }
     }
 }
