@@ -23,8 +23,6 @@ public class GameController : MonoBehaviour
     public Text coinsText;
 
     public GameObject restartButton;
-
-    public GameObject exitButton;
     
     public GameObject youWinText;
     
@@ -85,7 +83,6 @@ public class GameController : MonoBehaviour
     {
         gameOverText.SetActive(true);
         restartButton.SetActive(true);
-        exitButton.SetActive(true);
         scoreText.enabled = false;
         coinsText.enabled = false;
         
@@ -98,7 +95,6 @@ public class GameController : MonoBehaviour
     {
         youWinText.SetActive(true);
         restartButton.SetActive(true);
-        exitButton.SetActive(true);
         scoreText.enabled = false;
         coinsText.enabled = false;
         gameOverText.SetActive(false);
