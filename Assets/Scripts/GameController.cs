@@ -17,6 +17,12 @@ public class GameController : MonoBehaviour
     private int score = 0;
 
     public Text scoreText;
+
+    public Text coinsText;
+
+    public GameObject restartButton;
+
+    public GameObject exitButton;
     
     // Start is called before the first frame update
     void Awake()
@@ -50,6 +56,7 @@ public class GameController : MonoBehaviour
     	}
 
     	score += scoreValue;
+        Debug.Log("SCORE: " + score.ToString());
     	scoreText.text = "SCORE: " + score.ToString();
 	}
 
@@ -57,6 +64,11 @@ public class GameController : MonoBehaviour
     public void ManDied()
     {
         gameOverText.SetActive(true);
+        restartButton.SetActive(true);
+        exitButton.SetActive(true);
+        scoreText.enabled = false;
+        coinsText.enabled = false;
+        
         gameOver = true;
     }
 }

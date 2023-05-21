@@ -51,6 +51,7 @@ public class DogController : MonoBehaviour
         {
             // Destroy the Man object
             Destroy(collision.gameObject);
+            GameController.instance.ManDied();
         }
     }
 }
