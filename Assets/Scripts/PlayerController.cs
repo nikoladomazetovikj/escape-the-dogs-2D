@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody2D rb;
-    public float runSpeed = 0.5f;
-    public float jumpForce = 2f;
+    public float runSpeed = 0.5f;  // run speed
+    public float jumpForce = 2f;  // force of the jump
     public float jumpDuration = 0.5f; // Duration of the jump
 
     private float jumpTime; // Time elapsed since the jump started
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check for input
+        // Check for input 
         float horizontalInput = Input.GetAxis("Horizontal");
         bool jumpInput = Input.GetKeyDown(KeyCode.UpArrow);
 
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         if (horizontalInput != 0)
         {
             animator.SetBool("Run", true);
-            // Move the object horizontally
+            // Move the object horizontally left or right
             rb.velocity = new Vector2(horizontalInput * runSpeed, rb.velocity.y);
         }
         else
@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        // collect coins on colliding 
         if (collision.CompareTag("Coin"))
         {
             GameController.instance.CollectCoin();
