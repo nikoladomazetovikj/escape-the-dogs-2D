@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     public float runSpeed = 0.5f;  // run speed
-    public float jumpForce = 2f;  // force of the jump
-    public float jumpDuration = 0.5f; // Duration of the jump
+    public float jumpForce = 1.5f;  // force of the jump
+    public float jumpDuration = 0.25f; // Duration of the jump
 
     private float jumpTime; // Time elapsed since the jump started
     private bool isJumping; // Flag to track if the player is currently jumping
